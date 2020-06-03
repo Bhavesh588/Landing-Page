@@ -1,0 +1,47 @@
+@import '../../responsive/mixin';
+
+.image-container {
+    background-color: rgb(54, 78, 129);
+    width: 400px;
+    height: 300px;
+
+    .hover-title {
+        margin-left: 50px;
+        margin-top: 20px;
+        color: white;
+        position: absolute;
+        font-size: 1.5rem;
+
+        .features {
+            font-family: 'Brush Script Std';
+            font-size: 2rem;
+        }
+
+        hr {
+            width: 50px;
+            margin-top: -5px;
+            margin-left: 0px;
+            background-color: white;
+        }
+    }
+
+    .address {
+        margin-left: 50px;
+        color: white;
+        position: absolute;
+        font-size: 1.2rem;
+        margin-top: 100px;
+    }
+}
+
+.proimg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease;
+    
+    &:hover {
+        opacity: 0;
+    }
+}
+

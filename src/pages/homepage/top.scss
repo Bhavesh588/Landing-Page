@@ -1,0 +1,67 @@
+@import '../../responsive/mixin';
+@import '../../responsive/variable';
+
+#top {
+    background-image: url('../../assets/Top_Image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+
+    .top-menu {
+        width: 100%;
+        // position: absolute;
+        align-self: flex-start;
+        margin-top: 50px;
+        padding: 0px 50px;
+
+        .img-top-menu {
+            width: 50px;
+        }
+    }
+
+    .title {
+        font-size: $titlefont;
+        font-family: 'Baskerville Old Face';
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .moto {
+        font-size: $motofont;
+    }
+
+    .drop {
+        position: absolute;
+        align-self: flex-end;
+        width: 100%;
+        text-align: center;
+
+        .scroll {
+            width: 30px;
+            height: 30px;
+        }
+
+        .btn-scroll {
+            background-color: transparent;
+            border: 0px;
+        }
+    }
+
+    @include respond(phone) {
+        background-color: blue;
+
+        .title {
+            font-size: $mobiletitlefont;
+        }
+
+        .moto {
+            font-size: $mobilemotofont;
+        }
+    }
+}

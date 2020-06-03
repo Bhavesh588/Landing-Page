@@ -1,0 +1,31 @@
+@import '../../responsive/mixin';
+
+#Register {
+    background-color: rgb(54, 78, 129);
+    padding: 30px 0px;
+    color: rgb(230, 233, 240);
+
+    .container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
+    
+    .col-width-form {
+        min-width: auto;
+        max-width: auto;
+        flex-grow: 0;
+        // padding: 10px;
+    }
+
+    @include respond(tab-land) {
+        
+    }
+
+    @include respond(tab-port-sm) {
+        
+    }
+}

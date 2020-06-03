@@ -1,0 +1,29 @@
+@import '../../responsive/mixin';
+
+.form-container {
+    margin-top: 50px;
+}
+
+.username, .email {
+    width: 300px;
+}
+
+.al {
+    text-align: left;
+}
+
+@include respond(tab-land) {
+    .al{
+        text-align: left;
+    }
+}
+
+@include respond(phone) {
+    // .al{
+    //     text-align: center;
+    // }
+
+    // .username, .email {
+    //     width: 100%;
+    // }
+}

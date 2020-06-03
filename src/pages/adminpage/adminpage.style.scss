@@ -1,0 +1,34 @@
+@import '../../responsive/mixin';
+
+.main-admin {
+    min-height: 100vh;
+
+    .col-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 20px 0px;
+
+        .logout {
+            border: 0px;
+            background-color: transparent;
+            color: white;
+        }
+    }
+
+    .col-imp {
+        padding: 20px 0px;
+        color: gray;
+    }
+
+    .col-scroll {
+        position: relative;
+        height: 60vh;
+        overflow: auto;
+    }
+
+    .name {
+        align-items: center;
+    }
+}
